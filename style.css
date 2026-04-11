@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #111;
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0b;
     color: white;
 }
 
+/* HEADER */
 header {
-    background-color: black;
-    padding: 15px;
+    background: linear-gradient(90deg, black, #1a1a1a);
+    padding: 20px;
     text-align: center;
     border-bottom: 3px solid gold;
 }
@@ -15,58 +16,65 @@ header {
 header h1 {
     margin: 0;
     color: gold;
+    font-size: 32px;
 }
 
+/* MENU */
 nav {
     margin-top: 10px;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: gold;
 }
 
+/* CONTEÚDO */
 .container {
-    padding: 20px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
+    padding: 20px;
 }
 
+/* CARDS */
+.player {
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.player:hover {
+    transform: translateY(-5px);
+    border-color: gold;
+}
+
+/* GRID */
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* IMAGENS */
+.player img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+}
+
+/* TÍTULOS */
 h2 {
     color: gold;
     border-bottom: 2px solid gold;
     padding-bottom: 5px;
-}
-
-/* 🔥 CARDS DOS JOGADORES */
-.player {
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.player:hover {
-    transform: scale(1.03);
-    border-color: gold;
-}
-
-.player img {
-    width: 200px;
-    border-radius: 10px;
-    margin: 10px 0;
-}
-
-.player strong {
-    font-size: 18px;
-    color: gold;
 }
