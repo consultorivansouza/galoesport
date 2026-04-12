@@ -66,3 +66,24 @@ nav a:hover {
     background-color: #222;
     border-radius: 10px;
 }
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.player img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
