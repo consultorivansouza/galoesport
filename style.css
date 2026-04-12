@@ -147,3 +147,37 @@ html {
     font-size: 15px;
     line-height: 1.6;
 }
+.titles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title-box {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.title-box:hover {
+    transform: translateY(-10px);
+    background: #222;
+}
+
+.trophy {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.title-box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.title-box p {
+    font-size: 16px;
+}
