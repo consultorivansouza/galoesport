@@ -1,32 +1,70 @@
-.titles-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0b;
+    color: white;
 }
 
-.title-item {
-    background: #111;
-    border-left: 4px solid gold;
-    padding: 15px;
-    border-radius: 6px;
-    transition: 0.2s;
+/* HEADER PADRÃO */
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid gold;
 }
 
-.title-item:hover {
-    background: #1a1a1a;
-}
-
-.title-item h3 {
+header h1 {
     margin: 0;
     color: gold;
 }
 
-.title-item p {
-    margin: 5px 0;
-    font-size: 17px;
+nav {
+    margin-top: 10px;
 }
 
-.title-item span {
-    font-size: 14px;
-    color: #aaa;
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* CONTEÚDO */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* TÍTULOS */
+h2 {
+    color: gold;
+    border-bottom: 2px solid gold;
+    padding-bottom: 5px;
+}
+
+/* CARD PADRÃO (USADO EM TUDO) */
+.card {
+    background: #111;
+    border-left: 4px solid gold;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    border-radius: 8px;
 }
