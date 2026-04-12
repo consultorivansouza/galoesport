@@ -1,85 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background: #0b0b0b;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
     color: white;
 }
 
-/* HEADER */
-.header {
-    background: black;
+header {
+    background-color: black;
     padding: 15px;
     text-align: center;
-    border-bottom: 2px solid #444;
 }
 
-.logo-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+header h1 {
+    margin: 0;
+    color: white;
 }
 
-.logo-area img {
-    width: 60px;
-    filter: drop-shadow(0 0 5px white);
-}
-
-.menu {
+nav {
     margin-top: 10px;
 }
 
-.menu a {
+nav a {
     color: white;
-    margin: 0 10px;
+    margin: 10px;
     text-decoration: none;
     font-weight: bold;
-    position: relative;
 }
 
-.menu a::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: white;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transition: 0.3s;
+nav a:hover {
+    color: #ccc;
 }
 
-.menu a:hover::after {
-    width: 100%;
-}
-
-/* BANNER */
-.banner {
-    height: 350px;
-    background: url("images/banner.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner h2 {
-    font-size: 40px;
-    background: rgba(0,0,0,0.6);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-/* CONTAINER */
 .container {
-    padding: 40px 20px;
+    padding: 40px;
     text-align: center;
 }
 
-/* CARDS */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -88,60 +44,28 @@ body {
 }
 
 .card {
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 15px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    background: #222;
+    transform: scale(1.05);
+    background-color: #333;
 }
 
 .card a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-}
-
-/* PLAYERS */
-.players-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
 }
 
 .player {
-    background: #1a1a1a;
+    margin: 20px 0;
     padding: 20px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.player:hover {
-    transform: scale(1.05);
-}
-
-.player img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+    background-color: #222;
     border-radius: 10px;
 }
-
-/* TEXT */
-p {
-    margin-top: 15px;
-    line-height: 1.6;
-}
-
-/* RESPONSIVO */
-@media (max-width: 600px) {
-    .banner h2 {
-        font-size: 24px;
-    }
-
     .logo-area h1 {
         font-size: 18px;
     }
