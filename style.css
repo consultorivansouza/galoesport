@@ -70,3 +70,12 @@ nav a:hover {
         font-size: 18px;
     }
 }
+.section {
+    padding: 60px 20px;
+    border-top: 1px solid #333;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
