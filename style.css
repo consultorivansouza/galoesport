@@ -1,3 +1,17 @@
+<header class="header">
+    <div class="logo-area">
+        <img src="images/escudo.png" alt="Atlético Mineiro">
+        <h1>Atlético Mineiro</h1>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="titles.html">Titles</a>
+        <a href="players.html">Players</a>
+        <a href="opinion.html">Opinion</a>
+    </nav>
+</header>
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
