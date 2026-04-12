@@ -200,3 +200,46 @@ html {
     border-radius: 10px;
     margin: 10px 0;
 }
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.player {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.player:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGEM PADRONIZADA */
+.player img {
+    width: 100%;
+    height: 260px; /* altura fixa = todas iguais */
+    object-fit: cover; /* mantém proporção cortando */
+    border-radius: 10px;
+
+    /* BORDA FINA */
+    border: 2px solid #ccc;
+
+    /* ALTO RELEVO (PROFISSIONAL) */
+    box-shadow: 
+        0 4px 10px rgba(0,0,0,0.6),
+        0 0 5px rgba(255,255,255,0.2);
+
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+/* EFEITO HOVER */
+.player img:hover {
+    transform: scale(1.03);
+}
