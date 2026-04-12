@@ -74,3 +74,12 @@ footer {
     border-top: 1px solid #333;
     margin-top: 40px;
 }
+<header>...</header>
+
+<main class="container">
+    <!-- conteúdo aqui -->
+</main>
+
+<footer>
+    <p>© 2026 Atlético Mineiro</p>
+</footer>
