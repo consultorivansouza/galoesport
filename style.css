@@ -89,3 +89,41 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* GRID DA HOME */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* CARDS DO MENU */
+.menu-card {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    height: 150px; /* 🔥 tamanho fixo = tudo igual */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.menu-card:hover {
+    background: #1a1a1a;
+    border: 1px solid gold;
+    transform: translateY(-3px);
+}
+
+/* TEXTO */
+.menu-card h3 {
+    margin: 0;
+    color: gold;
+}
+
+.menu-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
