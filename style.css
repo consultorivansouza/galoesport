@@ -93,3 +93,15 @@ nav a:hover {
         transform: translateY(0);
     }
 }
+/* NÚMEROS GRANDES */
+.numero {
+    font-size: 40px;
+    color: gold;
+    margin: 10px 0;
+}
+
+/* ANOS */
+.player span {
+    font-size: 14px;
+    color: #ccc;
+}
