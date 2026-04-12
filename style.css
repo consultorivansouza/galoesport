@@ -79,3 +79,6 @@ nav a:hover {
     margin-bottom: 20px;
     font-size: 28px;
 }
+html {
+    scroll-behavior: smooth;
+}
