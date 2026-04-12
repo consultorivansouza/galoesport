@@ -193,3 +193,10 @@ html {
 .title-box img:hover {
     transform: scale(1.05);
 }
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
